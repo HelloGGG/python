@@ -1,2 +1,2 @@
 # python
-## create python repository
+## some small python project
