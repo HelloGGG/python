@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 800px;
+    margin: 0 auto;
+    background: #edf0f2;
+}
+form{
+    width: 50%;
+    height:600px;
+    float:left;
+    padding: 10px;
+}
+form > p{
+    margin: 10px;
+}
+form > p > input {
+    height: 30px;
+    border-radius: 5px;
+}
+form > p > input[type="submit"]{
+    width: 50px;
+}
+#show_result{
+    width: 50%;
+    height:600px;
+    float:right;
+    margin-top:40px;
+}
+#show_result h2{
+    text-align: center;
+    margin: 5px 0;
+}
+#show_result img{
+    display: block;
+    margin: 0 auto;
+    height: 550px;
+}

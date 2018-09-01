@@ -1,0 +1,6 @@
+flask
+requests
+wordcloud
+scipy
+matplotlib
+jieba

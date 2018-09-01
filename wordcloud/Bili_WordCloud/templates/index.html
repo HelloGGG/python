@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+    <title>index</title>
+</head>
+<body>
+    <form action="" method="POST" id="mainForm">
+        <p>项目名称： </p><p><input type="text" name="project"  checked="checked"></p>
+        <p>视频弹幕id(用逗号分隔不同id)： </p><p><input type="text" name="ids"  checked="checked"></p>
+        <p>轮廓图文件绝对路径： </p><p><input type="text" name="back_img" checked="checked"></p>
+        <p><input type="submit" value="提交" id="submit"></p>
+    </form>
+  
+    <div id="show_result">
+        <img src="" alt="" id="result">
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="myModal">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Info</h5>
+                </div>
+                <div class="modal-body">
+                  <p>Loaing...Please wait</p>
+                </div>
+              </div>
+            </div>
+    </div>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+    <script src="{{url_for('static', filename='js/index.js')}}"></script>
+</body>
+</html>
